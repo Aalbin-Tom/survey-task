@@ -2,7 +2,7 @@ const express = require('express')
 const mongodb = require('mongodb')
 const connectDB = require('./config/db')
 const morgan = require('morgan')
-// const bodyparser = require('body-parser')
+const bodyparser = require('body-parser')
 const limiter = require('./Middlewears/bottleneck')
 const cors = require('cors');
 const userRouter = require('./Router/userRouter')
@@ -16,7 +16,7 @@ const app = express()
 connectDB()
 
 app.use(express.json())
-// app.use(bodyparser.json())
+app.use(bodyparser.json())
 app.use(morgan('dev')) 
 app.use(cors())
 
