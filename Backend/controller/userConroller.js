@@ -22,11 +22,6 @@ const registerUser = asyncHandler(async (req, res) => {
       }
 console.log(userExists);
 console.log("hhhhhh");
-<<<<<<< Aalbin
-=======
-console.log("hhhhhh");
-//  } else {
->>>>>>> mai
     } else {
         const user = await User.create({
             name, email, password
