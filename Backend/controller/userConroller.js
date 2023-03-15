@@ -20,7 +20,8 @@ const registerUser = asyncHandler(async (req, res) => {
               res.status(400)
             throw new Error("Invalid Email or Password")
       }
-
+console.log(userExists);
+console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
     } else {
         const user = await User.create({
             name, email, password
