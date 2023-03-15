@@ -21,7 +21,7 @@ const registerUser = asyncHandler(async (req, res) => {
             throw new Error("Invalid Email or Password")
       }
 console.log(userExists);
-console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
+console.log("hhhhhh");
     } else {
         const user = await User.create({
             name, email, password
