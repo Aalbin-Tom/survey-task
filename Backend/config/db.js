@@ -9,8 +9,7 @@ try {
     console.log(`db connectred`);
 } catch (error) {
     console.log(`error:${error}`);
-
-//redfffffffedddddddddddddd
+//gfsdfesfesfsdfsdfefe
 }
 
 }
